@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devang's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/3699c6dfd7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="logo.jpeg" alt="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>          
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span class="name">Khuss</span> Thakrani</h1>
+          <p>Computer Science Student at <span class="name"> UNB </span> Fredericton</p>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------about------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="text">
+              As an avid computer science enthusiast, I am actively pursuing a challenging Co-op role. Keen to apply my skills, I aim to excel in an environment that not only poses significant challenges but also allows me to actively contribute to the company's efficient progress.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('awards')">Awards</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />HTML, CSS, JavaScript</li>
+                <li><span>Programming language</span><br />C, Java(JavaFx)</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Sept. 2023 - Current</span><br />Customer Experience
+                  Customer Service Specialist at Walmart Supercenter Fredericton
+                </li>
+                <li>
+                  <span>Aug. 2022 - Apr. 2023</span><br />IT Support Specialist at
+                  Bombay IT Solutions - Eastern Chamber, Mumbai
+                </li>
+                <li>
+                  <span>May. 2022 - Aug. 2023</span><br />Math and CS tutor for 
+                  Training institute (Career institute) Bhayander East, Mumbai.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Sept. 2023 - Current</span><br />Bachelor in Computer
+                  Sciece at UNB Fredericton.
+                </li>
+                <li>
+                  <span>June 2020 - May.2022</span><br />High School,Mumbai
+                  India.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="awards">
+              <ul>
+                <li><span>Aug. 2023</span><br />Entrance Scholarship at UNB</li>
+                <li>
+                  <span>Jun. 2022</span><br />Top Rank in High School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------Contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="container-design">
+            <p> <i class="fa-solid fa-envelope"></i> khuss.thakrani@unb.ca</p>
+            <p> <i class="fa-solid fa-phone"></i>+1 (506)897-2845</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100009579393249"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/khuss714/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/khuss-thakrani-10b6321b1/"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <a href=# download class="btn">Download Resume</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js">
+      
+    </script>
+  </body>
+</html>
