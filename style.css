@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #844848;
+  color: #080808;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Khuss_bk.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  color: #fff;
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.name {
+  color: black;
+  font-weight: bold;
+}
+
+/*  ------------about------------- */
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text {
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 40px 0 40px;
+}
+
+.tab-links {
+  color: #fff;
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  color: #fff;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  font-size: 20px;
+  color: black;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* -----------Contact---------- */
+
+.contact-left {
+  flex-basis: 32%;
+}
+
+.contact-right {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contact-left h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-left p {
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+}
+
+.contact-left p i {
+  color: maroon;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: maroon;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+.container-design {
+  background-color: rgb(207, 177, 177);
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+.btn {
+  margin-top: 40px;
+  width: fit-content;
+  border: 1px solid black;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: maroon;
+  background: rgb(207, 177, 177);
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
