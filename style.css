@@ -80,6 +80,7 @@ nav ul li a:hover::after {
   font-weight: bold;
 }
 
+/*  ------------about------------- */
 
 #about {
   padding: 80px 0;
@@ -154,7 +155,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
   font-size: 20px;
-  color: white; 
+  color: white;  
   font-weight: bold;
 }
 
@@ -167,6 +168,7 @@ nav ul li a:hover::after {
   display: block;
 }
 
+/* -----------Contact---------- */
 
 .contact-left {
   flex-basis: 32%;
@@ -236,4 +238,4 @@ nav ul li a:hover::after {
 .btn:hover {
   background: black;
   color: white;
-}
+} 
