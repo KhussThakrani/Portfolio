@@ -148,21 +148,26 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li {
-  color: white; /* default text color for list items */
   list-style: none;
   margin: 10px 0;
+  color: black; /* makes the section titles black */
 }
 
 .tab-contents ul li span {
-  color: black; /* only make the <span> (titles/timelines) black */
   font-size: 20px;
-  font-weight: bold; /* optional: makes titles/timelines bold */
+  font-weight: bold;
 }
 
-
-.tab-contents ul li {
-  color: white; 
+.tab-contents ul li .badge {
+  color: white;        /* skills in white */
+  background: #222;    /* optional: give badges a background */
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  font-weight: normal;
+  font-size: 16px;
 }
+
 
 
 
