@@ -16,8 +16,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  /*background-image: url(Khuss_bk.jpg);*/
-  background-size: cover;
+background: linear-gradient(to right, #844848, #aa6666);  background-size: cover;
   background-position: center;
 }
 
