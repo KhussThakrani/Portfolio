@@ -155,9 +155,14 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
   font-size: 20px;
-  color: white;  
+  color: black; 
   font-weight: bold;
 }
+
+.tab-contents ul li {
+  color: white; 
+}
+
 
 
 .tab-contents {
