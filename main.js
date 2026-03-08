@@ -4,19 +4,19 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.querySelectorAll("#about .tab-contents");
 
-function opentab(tabname) {
+function opentab(tabname, element) {
   for (let tablink of tablinks) {
     tablink.classList.remove("active-link");
   }
+
   for (let tabcontent of tabcontents) {
     tabcontent.classList.remove("active-tab");
   }
 
-  const clickedTab = window.event.currentTarget;
-  clickedTab.classList.add("active-link");
+  element.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
 
@@ -40,13 +40,13 @@ ScrollReveal().reveal(".tab-links", {
   delay: 250,
 });
 
-ScrollReveal().reveal("#skills ul li, #experience ul li, #education ul li, #awards ul li", {
+ScrollReveal().reveal(".services-list div", {
   ...scrollRevealOption,
   interval: 150,
-  delay: 250,
+  delay: 200,
 });
 
-ScrollReveal().reveal(".services-list div", {
+ScrollReveal().reveal(".info-panel ul li", {
   ...scrollRevealOption,
   interval: 150,
   delay: 200,
