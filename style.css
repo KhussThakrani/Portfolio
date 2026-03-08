@@ -159,58 +159,63 @@ nav ul li a:hover::after {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.about-header {
+  margin-bottom: 32px;
+}
+
 .sub-title {
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(34px, 4vw, 48px);
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .text {
   color: var(--muted);
-  font-size: 18px;
-  max-width: 850px;
+  font-size: 19px;
+  line-height: 1.8;
+  max-width: 900px;
 }
 
-/* ---------- Tabs ---------- */
+/* ---------- About Card / Tabs ---------- */
+
+.about-card {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
 
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
-  margin: 40px 0 24px;
+  gap: 14px;
+  margin-bottom: 28px;
 }
 
 .tab-button {
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid rgba(56, 189, 248, 0.18);
   color: var(--muted);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  position: relative;
-  padding: 0;
-  transition: color 0.3s ease;
+  padding: 10px 18px;
+  border-radius: 999px;
+  transition: all 0.25s ease;
 }
 
-.tab-button:hover,
-.tab-button.is-active {
+.tab-button:hover {
   color: var(--text);
+  border-color: rgba(56, 189, 248, 0.45);
 }
 
-.tab-button::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: width 0.3s ease;
-}
-
-.tab-button.is-active::after {
-  width: 100%;
+.tab-button.is-active {
+  background: rgba(56, 189, 248, 0.14);
+  color: var(--text);
+  border-color: rgba(56, 189, 248, 0.5);
 }
 
 .tab-panel {
@@ -221,25 +226,24 @@ nav ul li a:hover::after {
   display: block;
 }
 
-.tab-panel ul {
-  display: grid;
-  gap: 16px;
-}
-
-.tab-panel ul li {
-  list-style: none;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.03);
+.skill-group {
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 18px 20px;
-  box-shadow: var(--shadow);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
 }
 
-.tab-panel ul li span {
-  font-size: 18px;
-  font-weight: 700;
+.skill-group h3 {
+  font-size: 22px;
   color: var(--text);
+  margin-bottom: 14px;
+}
+
+.badge-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .badge {
@@ -247,11 +251,48 @@ nav ul li a:hover::after {
   color: var(--text);
   background: rgba(56, 189, 248, 0.14);
   border: 1px solid rgba(56, 189, 248, 0.3);
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-radius: 999px;
-  margin: 8px 8px 0 0;
   font-size: 14px;
   font-weight: 500;
+  margin: 0;
+}
+
+.timeline-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+.timeline-date {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.timeline-item h3 {
+  color: var(--text);
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.timeline-org {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.clean-list {
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.clean-list li {
+  margin-bottom: 8px;
 }
 
 /* ---------- Info Panel ---------- */
@@ -444,16 +485,19 @@ nav ul li a:hover::after {
     text-align: center;
   }
 
-  .sub-title {
-    font-size: 30px;
+  .about-card {
+    padding: 20px;
   }
 
   .tab-button {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 9px 14px;
   }
 
-  .tab-panel ul li span,
-  .info-panel ul li span {
-    font-size: 17px;
+  .skill-group h3,
+  .timeline-item h3,
+  .info-panel ul li span,
+  .services-list h2 {
+    font-size: 19px;
   }
 }
