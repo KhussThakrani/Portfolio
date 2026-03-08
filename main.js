@@ -8,13 +8,15 @@ var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname) {
-  for (tablink of tablinks) {
+  for (let tablink of tablinks) {
     tablink.classList.remove("active-link");
   }
-  for (tabcontent of tabcontents) {
+  for (let tabcontent of tabcontents) {
     tabcontent.classList.remove("active-tab");
   }
-  event.currentTarget.classList.add("active-link");
+
+  const clickedTab = window.event.currentTarget;
+  clickedTab.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
 
@@ -22,25 +24,32 @@ ScrollReveal().reveal(".header-text h1", scrollRevealOption);
 
 ScrollReveal().reveal(".header-text p", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 300,
 });
 
 ScrollReveal().reveal("#about .sub-title", scrollRevealOption);
 
 ScrollReveal().reveal(".text", {
   ...scrollRevealOption,
-  delay: 400,
+  delay: 250,
 });
 
 ScrollReveal().reveal(".tab-links", {
   ...scrollRevealOption,
-  interval: 400,
-  delay: 800,
+  interval: 150,
+  delay: 250,
 });
 
-ScrollReveal().reveal("#skills ul li", {
+ScrollReveal().reveal("#skills ul li, #experience ul li, #education ul li, #awards ul li", {
   ...scrollRevealOption,
-  delay: 2800,
+  interval: 150,
+  delay: 250,
+});
+
+ScrollReveal().reveal(".services-list div", {
+  ...scrollRevealOption,
+  interval: 150,
+  delay: 200,
 });
 
 ScrollReveal().reveal("#contact .sub-title", scrollRevealOption);
