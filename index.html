@@ -53,20 +53,26 @@
           webpage editing, structured information, and online tools.
         </p>
 
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills', this)">
+        <div class="tabs" role="tablist" aria-label="About sections">
+          <button
+            class="tab-button is-active"
+            data-tab="skills"
+            type="button"
+          >
             Skills
-          </p>
-          <p class="tab-links" onclick="opentab('experience', this)">
+          </button>
+          <button class="tab-button" data-tab="experience" type="button">
             Experience
-          </p>
-          <p class="tab-links" onclick="opentab('education', this)">
+          </button>
+          <button class="tab-button" data-tab="education" type="button">
             Education
-          </p>
-          <p class="tab-links" onclick="opentab('awards', this)">Awards</p>
+          </button>
+          <button class="tab-button" data-tab="awards" type="button">
+            Awards
+          </button>
         </div>
 
-        <div class="tab-contents active-tab" id="skills">
+        <div class="tab-panel is-active" id="skills">
           <ul>
             <li>
               <span>Web Development</span><br />
@@ -95,7 +101,7 @@
           </ul>
         </div>
 
-        <div class="tab-contents" id="experience">
+        <div class="tab-panel" id="experience">
           <ul>
             <li>
               <span>Jan. 2026 - Present</span><br />
@@ -134,7 +140,7 @@
           </ul>
         </div>
 
-        <div class="tab-contents" id="education">
+        <div class="tab-panel" id="education">
           <ul>
             <li>
               <span>August 2023 - Present</span><br />
@@ -148,7 +154,7 @@
           </ul>
         </div>
 
-        <div class="tab-contents" id="awards">
+        <div class="tab-panel" id="awards">
           <ul>
             <li><span>Aug. 2023</span><br />Entrance Scholarship at UNB</li>
             <li><span>June 2022</span><br />Top Rank in High School</li>
