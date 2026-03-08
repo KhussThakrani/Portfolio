@@ -51,9 +51,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 28px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -66,6 +64,7 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -125,8 +124,7 @@ nav ul li a:hover::after {
   font-weight: 700;
 }
 
-.hero-subtext,
-.header-text p:last-of-type {
+.hero-subtext {
   font-size: 22px;
   color: var(--muted);
   max-width: 680px;
@@ -162,6 +160,7 @@ nav ul li a:hover::after {
 #projects,
 #contact {
   padding: 90px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .sub-title {
@@ -256,6 +255,30 @@ nav ul li a:hover::after {
   font-weight: 500;
 }
 
+/* ---------- Info Panel ---------- */
+
+.info-panel ul {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.info-panel ul li {
+  list-style: none;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+
+.info-panel ul li span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
 /* ---------- Row Utility ---------- */
 
 .row {
@@ -313,7 +336,7 @@ nav ul li a:hover::after {
   font-size: 16px;
 }
 
-/* ---------- Tools / Contact ---------- */
+/* ---------- Contact ---------- */
 
 .contact-left,
 .contact-right {
@@ -369,16 +392,6 @@ nav ul li a:hover::after {
   justify-content: center;
 }
 
-/* ---------- Section separation ---------- */
-
-#about,
-#content,
-#tools,
-#projects,
-#contact {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
 /* ---------- Responsive ---------- */
 
 @media only screen and (max-width: 900px) {
@@ -388,7 +401,6 @@ nav ul li a:hover::after {
   }
 
   nav ul {
-    flex-wrap: wrap;
     justify-content: center;
     gap: 18px;
   }
@@ -397,8 +409,7 @@ nav ul li a:hover::after {
     padding: 80px 0 70px;
   }
 
-  .hero-subtext,
-  .header-text p:last-of-type {
+  .hero-subtext {
     font-size: 18px;
   }
 
@@ -433,7 +444,6 @@ nav ul li a:hover::after {
   }
 
   .hero-subtext,
-  .header-text p:last-of-type,
   .text {
     font-size: 16px;
   }
@@ -451,7 +461,8 @@ nav ul li a:hover::after {
     font-size: 16px;
   }
 
-  .tab-contents ul li span {
+  .tab-contents ul li span,
+  .info-panel ul li span {
     font-size: 17px;
   }
 }
