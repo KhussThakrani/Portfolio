@@ -13,7 +13,6 @@ html {
   --bg: #0f172a;
   --bg-soft: #111827;
   --panel: #1e293b;
-  --panel-2: #243247;
   --text: #f8fafc;
   --muted: #cbd5e1;
   --accent: #38bdf8;
@@ -31,7 +30,6 @@ body {
 .container {
   width: min(1100px, 90%);
   margin: 0 auto;
-  padding: 0;
 }
 
 /* ---------- Header ---------- */
@@ -42,8 +40,6 @@ body {
     radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 30%),
     radial-gradient(circle at right center, rgba(14, 165, 233, 0.12), transparent 28%),
     linear-gradient(180deg, #0f172a 0%, #111827 100%);
-  display: flex;
-  align-items: stretch;
 }
 
 nav {
@@ -152,7 +148,7 @@ nav ul li a:hover::after {
   color: #08111f;
 }
 
-/* ---------- General Sections ---------- */
+/* ---------- Sections ---------- */
 
 #about,
 #content,
@@ -176,30 +172,33 @@ nav ul li a:hover::after {
   max-width: 850px;
 }
 
-/* ---------- About Tabs ---------- */
+/* ---------- Tabs ---------- */
 
-.tab-titles {
+.tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
   margin: 40px 0 24px;
 }
 
-.tab-links {
+.tab-button {
+  background: none;
+  border: none;
   color: var(--muted);
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   position: relative;
+  padding: 0;
   transition: color 0.3s ease;
 }
 
-.tab-links:hover,
-.tab-links.active-link {
+.tab-button:hover,
+.tab-button.is-active {
   color: var(--text);
 }
 
-.tab-links::after {
+.tab-button::after {
   content: "";
   width: 0;
   height: 2px;
@@ -210,24 +209,24 @@ nav ul li a:hover::after {
   transition: width 0.3s ease;
 }
 
-.tab-links.active-link::after {
+.tab-button.is-active::after {
   width: 100%;
 }
 
-.tab-contents {
+.tab-panel {
   display: none;
 }
 
-.tab-contents.active-tab {
+.tab-panel.is-active {
   display: block;
 }
 
-.tab-contents ul {
+.tab-panel ul {
   display: grid;
   gap: 16px;
 }
 
-.tab-contents ul li {
+.tab-panel ul li {
   list-style: none;
   color: var(--muted);
   background: rgba(255, 255, 255, 0.03);
@@ -237,13 +236,13 @@ nav ul li a:hover::after {
   box-shadow: var(--shadow);
 }
 
-.tab-contents ul li span {
+.tab-panel ul li span {
   font-size: 18px;
   font-weight: 700;
   color: var(--text);
 }
 
-.tab-contents ul li .badge {
+.badge {
   display: inline-block;
   color: var(--text);
   background: rgba(56, 189, 248, 0.14);
@@ -279,7 +278,7 @@ nav ul li a:hover::after {
   color: var(--text);
 }
 
-/* ---------- Row Utility ---------- */
+/* ---------- Utility ---------- */
 
 .row {
   display: flex;
@@ -288,15 +287,7 @@ nav ul li a:hover::after {
   flex-wrap: wrap;
 }
 
-.about-col-1 {
-  display: none;
-}
-
-.about-col-2 {
-  flex: 1;
-}
-
-/* ---------- Cards / Services ---------- */
+/* ---------- Cards ---------- */
 
 .services-list {
   display: grid;
@@ -413,7 +404,7 @@ nav ul li a:hover::after {
     font-size: 18px;
   }
 
-  .tab-titles {
+  .tabs {
     gap: 18px;
   }
 }
@@ -457,11 +448,11 @@ nav ul li a:hover::after {
     font-size: 30px;
   }
 
-  .tab-links {
+  .tab-button {
     font-size: 16px;
   }
 
-  .tab-contents ul li span,
+  .tab-panel ul li span,
   .info-panel ul li span {
     font-size: 17px;
   }
