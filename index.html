@@ -44,121 +44,128 @@
 
     <div id="about">
       <div class="container">
-        <h1 class="sub-title">About Me</h1>
-        <p class="text">
-          I am a Computer Science student at the University of New Brunswick
-          with experience in web development, digital documentation, remote
-          collaboration, and content organization. I enjoy building clean,
-          user-friendly digital experiences and working on tasks that involve
-          webpage editing, structured information, and online tools.
-        </p>
-
-        <div class="tabs" role="tablist" aria-label="About sections">
-          <button
-            class="tab-button is-active"
-            data-tab="skills"
-            type="button"
-          >
-            Skills
-          </button>
-          <button class="tab-button" data-tab="experience" type="button">
-            Experience
-          </button>
-          <button class="tab-button" data-tab="education" type="button">
-            Education
-          </button>
-          <button class="tab-button" data-tab="awards" type="button">
-            Awards
-          </button>
+        <div class="about-header">
+          <h1 class="sub-title">About Me</h1>
+          <p class="text">
+            I am a Computer Science student at the University of New Brunswick
+            with experience in web development, digital documentation, remote
+            collaboration, and content organization. I enjoy building clean,
+            user-friendly digital experiences and working on tasks that involve
+            webpage editing, structured information, and online tools.
+          </p>
         </div>
 
-        <div class="tab-panel is-active" id="skills">
-          <ul>
-            <li>
-              <span>Web Development</span><br />
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">Responsive Design</span>
-            </li>
-            <li>
-              <span>Digital Content & Documentation</span><br />
-              <span class="badge">Page Formatting</span>
-              <span class="badge">Hyperlinks</span>
-              <span class="badge">Embedded Media</span>
-              <span class="badge">PDF Content</span>
-              <span class="badge">Documentation</span>
-            </li>
-            <li>
-              <span>Programming & Tools</span><br />
-              <span class="badge">Python</span>
-              <span class="badge">Java</span>
-              <span class="badge">C</span>
-              <span class="badge">Git</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Microsoft Office</span>
-            </li>
-          </ul>
-        </div>
+        <div class="about-card">
+          <div class="tabs" role="tablist" aria-label="About sections">
+            <button class="tab-button is-active" data-tab="skills" type="button">
+              Skills
+            </button>
+            <button class="tab-button" data-tab="experience" type="button">
+              Experience
+            </button>
+            <button class="tab-button" data-tab="education" type="button">
+              Education
+            </button>
+            <button class="tab-button" data-tab="awards" type="button">
+              Awards
+            </button>
+          </div>
 
-        <div class="tab-panel" id="experience">
-          <ul>
-            <li>
-              <span>Jan. 2026 - Present</span><br />
-              Digital Systems & Document Management Intern, Irving Consumer
-              Products
-              <br />
-              • Organize digital records and operational documentation using
-              Microsoft Office tools
-              <br />
-              • Collaborate remotely with teams using digital communication
-              platforms
-              <br />
-              • Support workflow efficiency through structured document
-              organization
-            </li>
-            <li>
-              <span>July 2024 - Present</span><br />
-              Sales Representative, Rogers Communications
-              <br />
-              • Maintain accurate customer records and documentation using
-              internal systems
-              <br />
-              • Communicate clearly with customers and team members in a
-              fast-paced environment
-            </li>
-            <li>
-              <span>Sept. 2025 - Dec. 2025</span><br />
-              Engineering Assistant, J.D. Irving, Limited
-              <br />
-              • Organized operational datasets using Excel to improve reporting
-              accuracy
-              <br />
-              • Assisted in preparing summaries and documentation for planning
-              purposes
-            </li>
-          </ul>
-        </div>
+          <div class="tab-panel is-active" id="skills">
+            <div class="skill-group">
+              <h3>Web Development</h3>
+              <div class="badge-wrap">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Responsive Design</span>
+              </div>
+            </div>
 
-        <div class="tab-panel" id="education">
-          <ul>
-            <li>
-              <span>August 2023 - Present</span><br />
-              Bachelor of Computer Science, University of New Brunswick,
-              Fredericton
-            </li>
-            <li>
-              <span>June 2020 - May 2022</span><br />
-              High School, Mumbai, India
-            </li>
-          </ul>
-        </div>
+            <div class="skill-group">
+              <h3>Digital Content & Documentation</h3>
+              <div class="badge-wrap">
+                <span class="badge">Page Formatting</span>
+                <span class="badge">Hyperlinks</span>
+                <span class="badge">Embedded Media</span>
+                <span class="badge">PDF Content</span>
+                <span class="badge">Documentation</span>
+              </div>
+            </div>
 
-        <div class="tab-panel" id="awards">
-          <ul>
-            <li><span>Aug. 2023</span><br />Entrance Scholarship at UNB</li>
-            <li><span>June 2022</span><br />Top Rank in High School</li>
-          </ul>
+            <div class="skill-group">
+              <h3>Programming & Tools</h3>
+              <div class="badge-wrap">
+                <span class="badge">Python</span>
+                <span class="badge">Java</span>
+                <span class="badge">C</span>
+                <span class="badge">Git</span>
+                <span class="badge">Power BI</span>
+                <span class="badge">Microsoft Office</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="experience">
+            <div class="timeline-item">
+              <div class="timeline-date">Jan. 2026 – Present</div>
+              <h3>Digital Systems & Document Management Intern</h3>
+              <p class="timeline-org">Irving Consumer Products</p>
+              <ul class="clean-list">
+                <li>Organize digital records and operational documentation using Microsoft Office tools.</li>
+                <li>Collaborate remotely with teams using digital communication platforms.</li>
+                <li>Support workflow efficiency through structured document organization.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">July 2024 – Present</div>
+              <h3>Sales Representative</h3>
+              <p class="timeline-org">Rogers Communications</p>
+              <ul class="clean-list">
+                <li>Maintain accurate customer records and documentation using internal systems.</li>
+                <li>Communicate clearly with customers and team members in a fast-paced environment.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">Sept. 2025 – Dec. 2025</div>
+              <h3>Engineering Assistant</h3>
+              <p class="timeline-org">J.D. Irving, Limited</p>
+              <ul class="clean-list">
+                <li>Organized operational datasets using Excel to improve reporting accuracy.</li>
+                <li>Assisted in preparing summaries and documentation for planning purposes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="education">
+            <div class="timeline-item">
+              <div class="timeline-date">August 2023 – Present</div>
+              <h3>Bachelor of Computer Science</h3>
+              <p class="timeline-org">University of New Brunswick, Fredericton</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">June 2020 – May 2022</div>
+              <h3>High School</h3>
+              <p class="timeline-org">Mumbai, India</p>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="awards">
+            <div class="timeline-item">
+              <div class="timeline-date">Aug. 2023</div>
+              <h3>Entrance Scholarship</h3>
+              <p class="timeline-org">University of New Brunswick</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">June 2022</div>
+              <h3>Top Rank in High School</h3>
+              <p class="timeline-org">Mumbai, India</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
