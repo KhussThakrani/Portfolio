@@ -26,16 +26,13 @@ ScrollReveal().reveal(".header-text p", {
   delay: 300,
 });
 
-ScrollReveal().reveal("#about .sub-title", scrollRevealOption);
-
-ScrollReveal().reveal(".text", {
+ScrollReveal().reveal(".about-header", {
   ...scrollRevealOption,
-  delay: 250,
+  delay: 150,
 });
 
-ScrollReveal().reveal(".tab-button", {
+ScrollReveal().reveal(".about-card", {
   ...scrollRevealOption,
-  interval: 150,
   delay: 250,
 });
 
